@@ -1,0 +1,316 @@
+/* for simple product list */
+.products-listTemp{
+  background-color: var(--bg);
+  height: 100vh;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 1fr 2fr 3fr;
+  align-content: center;
+  justify-items: center;
+  gap: 0;
+  @media (min-width:320px) and (max-width:480px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  };
+  @media (min-width:481px) and (max-width:768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  };
+  @media (min-width:769px) and (max-width:1024px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  };
+
+}
+  /* header */
+.prHeading{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:#d27ffb;
+  padding: 5px;
+  margin: 10px;
+  width: 900px;
+  height: 100px;
+  margin-top: 20px;
+  border-radius: 15px;
+  border: 2px solid blueviolet;
+
+  @media (min-width:320px) and (max-width:480px) {
+    width: 250px;
+    font-size:15px;
+    height: 100px;
+  };
+  @media (min-width:481px) and (max-width:768px) {
+    width: 400px;
+    font-size:25px;
+    height: 100px;
+  };
+  @media (min-width:769px) and (max-width:1024px) {
+    width: 600px;
+    font-size:29px;
+    height: 100px;
+  };
+
+}
+  /* filter */
+.prFilter{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  background-color: #12121e;
+  border:2px solid #5a3287;
+  padding: 5px;
+  border-radius: 1rem;
+  height: 200px;
+  width:600px;
+  div{
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      width: 100%;
+      label{
+          color:gold;
+          width: 50%;
+      }
+      input{
+        width: 40%;
+        background-color: #0b231b;
+        color:snow;
+        height: 20px;
+        padding-left: 5px;
+        border-radius:6px;
+        border-color:#135e33;
+        &:focus{
+          outline: none;
+        }
+      }
+  }
+  @media (min-width:320px) and (max-width:480px) {
+   width: 80%;
+   font-size:14px;
+   height: 170px;
+  };
+  @media(min-width:481px) and (max-width:768px) {
+ 
+   width: 88%;
+   font-size:20px;
+   height: 170px;
+  };
+  @media(min-width:769px) and (max-width:1024px) {
+ 
+   width: 88%;
+   font-size:23px;
+   height: 170px;
+  };
+}
+
+.pr-filter-title{
+  font-size: 20px;
+  font-weight: bold;
+  color: #f0e6ff;
+
+}
+
+  /* cards */
+.productCard-template{
+  display: grid;
+  width: 90vw;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  align-content: center;
+  div{
+    position: relative;
+    background-color: #5d348b;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 1.5rem;
+    border:2px solid #2b1c50;
+    height: 200px;
+    width: 100%;
+    &:hover{
+      background-color: #d27ffb;
+      border:2px solid cyan;
+      box-shadow: 0 0 2px 3px cadetblue;
+    }
+    button{
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      right: -5px;
+      top: -2px;
+      width: 30px;
+      height: 30px;
+      padding: 10px;
+      border-radius: 50%;
+      color: gold;
+      background-color: #151324;
+    }
+    p{
+      color: #eae0f9;
+      
+    }
+
+    
+  };
+  @media (min-width:320px) and (max-width:480px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    div{
+      width:100%;
+      height: 55px;
+      font-size: 13px;
+    }
+  };
+  @media (min-width:481px) and (max-width:768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    div{
+      width:100%;
+      height: 100px;
+      font-size: 20px;
+    }
+  }
+  @media (min-width:769px) and (max-width:1024px) {
+    display: grid;
+    width: 90vw;
+
+    gap: 10px;
+    align-content: center;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+
+    div{
+      width:100%;
+      height: 120px;
+      font-size: 18px;
+    }
+  }
+
+
+}
+
+
+
+
+
+/* for showing input value in console */
+.showInputVal{
+  background-color: var(--bg);
+  height: 100vh;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+#title-heading{
+  padding: 2rem;
+  color:#d37af4;
+  border-radius: 15px;
+  border: 2px solid blueviolet;
+}
+.inp{
+  background-color: blueviolet;
+  border: 1px solid #443075;
+  padding: 5px;
+  height: 30px;
+  width: 300px;
+  font-size: 1rem;
+  padding-left: 10px;
+  border-radius: 13px;
+  color:powderblue;
+  &:focus{
+    outline: none;
+    border: 1px solid #4800ff;
+  }
+  &:hover{
+    outline: none;
+    border: 1px solid rgba(0, 255, 255, 0.671);
+  }
+  &::placeholder{
+    color:rgba(255, 250, 250, 0.651);
+  }
+
+}
+.message-show-input{
+  color: rgb(31, 1, 61);
+  background-color: #d37af4;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid snow;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 17vw;
+  @media (min-width:320px) and (max-width:480px) {
+    position: static;
+    width: 50%;
+  }
+  @media (min-width:481px) and (max-width:768px) {
+    position: static;
+    
+    width: 50%;
+  }
+  @media (min-width:769px) and (max-width:1024px) {
+    position: static;
+    
+    width: 50%;
+  }
+
+
+}
+#button-show-input{
+  background-color: rgb(31, 1, 61);
+  padding: 1rem;
+  color: #d37af4;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  border-radius: 5px;
+  border:none;
+  width: 12rem;
+  cursor: pointer;
+  &:hover{
+    color:gold;
+    border:1px solid rgb(221, 44, 221);
+    padding: calc(1rem - 1px);
+  }
+
+}
+/* for user */
+.user{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-color: #151324;
+  div{
+    background-color: #0f2722;
+    color: #d1fae5;
+    padding: 10px;
+    margin-top: 11px;
+    border: 1px solid cadetblue;
+    border-radius: 9px;
+    &:hover{
+      cursor: progress;
+      border: 1px solid #135e33;
+    }
+  }
+}

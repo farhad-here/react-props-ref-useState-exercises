@@ -1,0 +1,10 @@
+:root {
+  --bg: #07070f;
+  @media (min-width: 1201px) {
+    font-size: 20px;
+  }
+}
+*{
+  margin: 0;
+  padding: 0;
+}
