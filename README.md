@@ -1,16 +1,85 @@
-# React + Vite
+# ⚛️ React Exercises
+#### A React project designed to practice some core React concepts such as props, component composition, useRef, useState and React Fragment.
+#### The project includes three simple exercises that focus on passing data between components and interacting with the DOM.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Exercises
+##  🐋 1. Simple Product List with Props
+Create a product list where each product contains:
 
-Currently, two official plugins are available:
+- Name
+- Price
+- Description
+- The product data is stored in an array inside the parent component and passed to the ProductCard component using props.
+- Each ProductCard is responsible for displaying the product information.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+##### 🎈Concepts practiced:
 
-## React Compiler
+- Props
+- Component composition
+- Rendering lists with map
+## 🐋 2. Show Input Text in Console (Without useState)
+Create:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- One input field
+- One button
+- When the button is clicked, the text inside the input should be printed in the browser console.
 
-## Expanding the ESLint configuration
+##### 👷Constraint:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Do not use useState
+- Use useRef to access the input value directly.
+##### 🎈Concepts practiced:
+
+- useRef
+- DOM access in React
+- Event handling
+## 🐋 3. Display User List with Props and Fragment
+Create a UserList component that receives an array of users and displays them.
+
+Each user contains:
+
+- Name
+- Age
+- City
+- The component should use React Fragment instead of adding unnecessary <div> wrappers.
+
+#### 🎈Concepts practiced:
+
+- Props
+- Rendering lists
+- React Fragment (<> </>)
+
+# 🧑‍💻 Technologies Used
+- React
+- JavaScript (ES6+)
+- Vite
+- SCSS (optional)
+### 🥅Learning Goals
+This project focuses on strengthening the following React fundamentals:
+
+- Passing data using props
+- Structuring reusable components
+- Using useRef for DOM access
+- Avoiding unnecessary DOM nodes with React Fragment
+- Rendering dynamic lists
+
+### ❔How to Run
+Clone the repository
+
+```bash
+git clone https://github.com/farhad-here/react-props-ref-useState-exercises.git
+```
+
+Install dependencies
+```bash
+npm install
+```
+Run the development server
+```bash
+npm run dev
+```
+##### 🪶Future Improvements:
+- Add styling with SCSS modules
+- Add TypeScript version
+- Add more React practice exercises
+This project is for learning purposes.
