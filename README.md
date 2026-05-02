@@ -1,5 +1,5 @@
 # ⚛️ React Exercises
-#### A React project designed to practice some core React concepts such as props, component composition, useRef, useState and React Fragment.
+#### A React project designed to practice some core React concepts such as props, component composition, useRef, useState and React Fragment. Furthermore, it is responsive.
 #### The project includes three simple exercises that focus on passing data between components and interacting with the DOM.
 
 Exercises
